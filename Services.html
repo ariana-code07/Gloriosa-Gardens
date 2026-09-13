@@ -1,48 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Services</title>
+        <meta name="description" content="Regular maintenance, plant care, and clean-up services from Gloriosa Gardens.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
     </head>
-    <style></style>
+
 <body >
-    
-    <header>
-      <div style="text-align: center;">
+    <div class="flame-rule"></div>
+      <header class="site-header">
+<div class="brand-row">
         <img src="IMAGES/logo.png " style="width: 23cm;height: 5cm;">
-      </div>
-    <h1 style="color: lightgreen;font-family: Palatino Linotype; ">Services include:</h1>
-    <h2 style="color:brown; font-family: Palatino Linotype; ">Regular Maintenance:</h2>
-    <ul style="font-size:20px;font-family:Baskerville Old Face;">
+    </div>
+       <nav class="site-nav" aria-label="Primary">
+            <a href="Home.html" >Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Services.html" class="active">Services</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Contact us.html">Contact Us</a>
+            <a href="Enquiry.html">Enquiry</a>
+        </nav>
+    </header>
+      <section class="hero" style="--hero-image: url('IMAGES/bushes.jpg');">
+        <span class="eyebrow">What We Offer</span>
+        <h1>Our Services</h1>
+        <p class="lede">From weekly upkeep to seasonal transformations, we cover every part of keeping a garden healthy and beautiful.</p>
+        <div class="hero-divider"></div>
+    </section>
+
+    <main>
+ <section class="service-grid">
+ <div class="service-card">
+  <h2 >Regular Maintenance:</h2>
+    <ul>
         <li>Lawn mowing and grass cutting</li>
         <li>Edge trimming along walkways and walls</li>
         <li>Weed control in beds and paths</li>
         <li>Blowing or sweeping hard surfaces</li>
-    </ul>
-     <h2 style="color:brown;font-family: Palatino Linotype; ">Plant Care:</h2>
-     <ul style="font-size:20px;font-family:Baskerville Old Face;" >
+         </ul>
+         </div>
+ <div class="service-card">
+  <h2 >Plant Care:</h2>
+     <ul  >
         <li>Pruning and shaping shrubs and bushes</li>
           <li>Hedge cutting and fence line trimming</li>
             <li>Deadheading flowers and removing dead leaves</li>
               <li>Seasonal planting of seedlings or flowers</li>
      </ul>
-     <h2 style="color:brown;font-family: Palatino Linotype; ">Clean-Up & Extras:</h2>
-      <ul style="font-size:20px;font-family:Baskerville Old Face;" >
+       </ul>
+            </div>
+            <div class="service-card">
+                <h2>Clean-Up &amp; Extras</h2>
+              <ul style="font-size:20px;font-family:Baskerville Old Face;" >
         <li>Garden refuse bagging and removal</li>
          <li>Leaf clearing during autumn or seasonal shifts</li>
           <li>Irrigation checks or basic system monitoring</li>
            <li>Lawn dressing and fertilizing </li>
       </ul>
-      
-        <nav>
-            <a href="Home.html"style="font-size: 30px;color:aquamarine;">Home</a>
-            <a href="About.html"style="font-size: 30px;color:aquamarine;">About us</a>
-            <a href="Services.html"style="font-size: 30px;color:aquamarine;">Services</a>
-               <a href="Gallery.html" style="font-size: 30px;color:aquamarine;">Gallery</a>
-             <a href="Contact us.html"style="font-size: 30px;color:aquamarine;">Contact us</a>
-        </nav>
-    </header>
-    <main>
+       </div>
+        </section>
 
+        <section>
+            <div class="section-heading">
+                <span class="kicker">Good To Know</span>
+                <h2>How We Price &amp; Schedule</h2>
+                <p>Every garden is different, so we don't use one-size-fits-all pricing. After a free site visit, we put together a written quote based on your garden's size, condition and how often you'd like us to visit &mdash; weekly, fortnightly, monthly, or as a once-off. There's no obligation to continue after the first visit.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <span class="kicker">Our Process</span>
+                <h2>What To Expect</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <span class="step-num"></span>
+                    <h3>Site Visit</h3>
+                    <p>We assess your garden and discuss what you need.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num"></span>
+                    <h3>Written Quote</h3>
+                    <p>A clear, itemised quote with no hidden costs.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num"></span>
+                    <h3>Scheduled Visits</h3>
+                    <p>Work is carried out on the schedule that suits you.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num"></span>
+                    <h3>Ongoing Care</h3>
+                    <p>Adjustments made season to season, as your garden grows.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <h2>Not sure which service you need?</h2>
+            <p>Send us an enquiry and we'll recommend the right plan for your garden.</p>
+            <a class="btn-link" href="Enquiry.html">Request A Quote</a>
+        </section> 
     </main>
     <footer>&copy;ST10527831</footer>
 </body>

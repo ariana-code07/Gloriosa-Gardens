@@ -1,33 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact us</title>
+         <meta name="description" content="Get in touch with Gloriosa Gardens by phone, email or LinkedIn, or find us on the map.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
     </head>
 <body>
-    <header>
-     <div style="text-align: center;">
+     <div class="flame-rule"></div>
+      <header class="site-header">
+<div class="brand-row">
         <img src="IMAGES/logo.png " style="width: 23cm;height: 5cm;">
     </div>
-    <h1 style="color: lightgreen; ">Contact Information:</h1>
-    <h2 style="color:brown; font-family: Palatino Linotype; ">Phone Number:</h2>
-    <p style="font-size: 20px;font-family:Baskerville Old Face;">+27 84 723 9418 </p>
-    <h2 style="color:brown; font-family: Palatino Linotype; ">Email:</h2>
-     <p style="font-size: 20px;font-family:Baskerville Old Face;">gloriosa123.rl@gmail.com</p>
-    <p style="font-size: 20px;font-family:Baskerville Old Face;"><a href="mailto:gloriosa123.rl@gmail.com" style="color: black;"> Send us a gmail </a></p>
-    <h2 style="color:brown; font-family: Palatino Linotype; ">Linkedln:</h2>
-     <p style="font-size: 20px;font-family:Baskerville Old Face;">Check out owner profile</p>
-    <p style="font-size: 20px;font-family:Baskerville Old Face;"><a href="https://www.linkedin.com/in/richard-lyall-24b70065?utm_source=share_via&utm_contact=profile&utm_medium=member_android" style="color: black;">Richard Lyall</a></p>
-        <nav>
-            <a href="Home.html"style="font-size: 30px; color:aquamarine;">Home</a>
-            <a href="About.html"style="font-size: 30px; color:aquamarine;">About us</a>
-            <a href="Services.html"style="font-size: 30px; color:aquamarine;">Services</a>
-               <a href="Gallery.html" style="font-size: 30px; color:aquamarine;">Gallery</a>
-             <a href="Contact us.html"style="font-size: 30px; color:aquamarine;">Contact us</a>
+       <nav class="site-nav" aria-label="Primary">
+            <a href="Home.html" >Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Contact us.html" class="active">Contact Us</a>
+            <a href="Enquiry.html">Enquiry</a>
         </nav>
-         <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d14321.982044578672!2d27.92913908233249!3d-26.18055468193715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1e950a7e40032fb9%3A0x41ac59aff7eb9f4a!2s90%20Rebecca%20St%2C%20Florida%2C%20Roodepoort%2C%201710!3m2!1d-26.1807685!2d27.929275099999998!5e0!3m2!1sen!2sza!4v1786445023776!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
     </header>
-    <main>
+      <section class="hero" style="--hero-image: url('IMAGES/walkway.jpg');">
+        <span class="eyebrow">Get In Touch</span>
+        <h1>Contact Information</h1>
+        <p class="lede">We'd love to help with your next garden project. Reach out any way that suits you.</p>
+        <div class="hero-divider"></div>
+    </section>
 
+   
+    <main>
+<section class="contact-grid">
+            <div class="contact-card">
+                <div class="label">Phone Number</div>
+                <p class="value">+27 84 723 9418</p>
+            </div>
+            <div class="contact-card">
+                <div class="label">Email</div>
+                <p class="value">gloriosa123.rl@gmail.com</p>
+                <a class="btn-link" href="mailto:gloriosa123.rl@gmail.com">Send us an email</a>
+            </div>
+            <div class="contact-card">
+                <div class="label">LinkedIn</div>
+                <p class="value">Check out the owner's profile</p>
+                <a class="btn-link" href="https://www.linkedin.com/in/richard-lyall-24b70065?utm_source=share_via&utm_contact=profile&utm_medium=member_android" target="_blank" rel="noopener">Richard Lyall</a>
+            </div>
+            <div class="contact-card">
+                <div class="label">Request A Quote</div>
+                <p class="value">Prefer a form?</p>
+                <a class="btn-link" href="Enquiry.html">Go To Enquiry Page</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <span class="kicker">When We're Available</span>
+                <h2>Operating Hours</h2>
+            </div>
+            <div class="contact-card" style="max-width: 480px; margin: 0 auto;">
+                <table class="hours-table">
+                    <tr><td>Monday &ndash; Friday</td><td>07:00 &ndash; 17:00</td></tr>
+                    
+                    <tr><td>Saterday,Sunday &amp; Public Holidays</td><td>Closed</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <span class="kicker">Find Us</span>
+                <h2>Our Location</h2>
+            </div>
+            <div class="map-wrap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d14321.982044578672!2d27.92913908233249!3d-26.18055468193715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1e950a7e40032fb9%3A0x41ac59aff7eb9f4a!2s90%20Rebecca%20St%2C%20Florida%2C%20Roodepoort%2C%201710!3m2!1d-26.1807685!2d27.929275099999998!5e0!3m2!1sen!2sza!4v1786445023776!5m2!1sen!2sza"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    title="Gloriosa Gardens location map"></iframe>
+            </div>
+        </section>
     </main>
     <footer>&copy;ST10527831</footer>
 </body>

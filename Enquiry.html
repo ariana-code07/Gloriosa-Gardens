@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry </title>
+    <meta name="description" content="Request a quote or send an enquiry to Gloriosa Gardens for garden maintenance and design services.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="flame-rule"></div>
+    <header class="site-header">
+        <div class="brand-row">
+        <img src="IMAGES/logo.png " style="width: 23cm;height: 5cm;">
+    </div>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="Home.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Contact us.html">Contact Us</a>
+            <a href="Enquiry.html" class="active">Enquiry</a>
+        </nav>
+    </header>
+
+    <section class="hero" style="--hero-image: url('IMAGES/nature.jpg');">
+        <span class="eyebrow">Request A Quote</span>
+        <h1>Send Us An Enquiry</h1>
+        <p class="lede">Tell us a little about your garden and what you need. We'll get back to you to arrange a free, no-obligation quote.</p>
+        <div class="hero-divider"></div>
+    </section>
+
+    <main>
+        <section>
+            <div class="form-card">
+             
+                <form action="mailto:gloriosa123.rl@gmail.com" method="get" enctype="text/plain">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullname">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullname" name="Full Name" required placeholder="Ariana Lyall">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="Phone" required placeholder="082 123 4567">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="Email" required placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="suburb">Suburb / Area</label>
+                            <input type="text" id="suburb" name="Suburb" placeholder="Florida, Roodepoort">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Service Interested In <span class="required">*</span></label>
+                            <select id="service" name="Service" required>
+                                <option value="">Choose a service&hellip;</option>
+                                <option value="Regular Maintenance">Regular Maintenance</option>
+                                <option value="Plant Care">Plant Care</option>
+                                <option value="Clean-Up & Extras">Clean-Up &amp; Extras</option>
+                                <option value="Full Garden Redesign">Full Garden Redesign</option>
+                                <option value="Not Sure Yet">Not Sure Yet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferred-date">Preferred Date</label>
+                            <input type="date" id="preferred-date" name="Preferred Date">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell Us About Your Garden <span class="required">*</span></label>
+                        <textarea id="message" name="Message" rows="5" required placeholder="Garden size, what you'd like done, any specific concerns..."></textarea>
+                    </div>
+                    <p class="form-note">Fields marked <span class="required">*</span> are required. Submitting opens your email app with these details ready to send to us.</p>
+
+                    <button type="submit" class="form-submit">Send Enquiry</button>
+                </form>
+
+                <p class="form-alt-contact">Prefer to talk directly? Call <strong>+27 84 723 9418</strong> or visit our <a href="Contact us.html">Contact page</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">&copy; ST10527831 </footer>
+</body>
+</html>
+
