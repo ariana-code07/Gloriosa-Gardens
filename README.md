@@ -57,4 +57,7 @@ References
 - Buguet: https://www.growthpulsemedia.co.za/website-cost-south-africa/
 - Logo: https://www.canva.com/design/DAHRg61_xCs/NPJQEmo1TPmjTWxRkcUhEw/edit?ui=e30
 - Github: https://github.com/ariana-code07/Gloriosa-Gardens.git
+- HTML: https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
+- CSS: https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf
+
 
