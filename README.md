@@ -34,9 +34,8 @@ Key Features and Functionality
 
 Timeline and Milestones
 
--  Part 1: HTML, Fixed navigation, markup and structural issues across five original pages(Complete)
--  Part 2:CSS, Shared stylesheet, colour/typography system, responsive layout and equiry page(Complete)
--  Part 3:JAVA(Pending)
+<img width="673" height="234" alt="image" src="https://github.com/user-attachments/assets/1a767d21-f44b-472a-9284-af3e11e4b825" />
+
 
 Part 1 Details ( HTML)
 - Added basic HTML tags (Header,body,main,ect)
