@@ -1,6 +1,15 @@
 Project Title: Glorosia Gardens
 
 Student information: Ariana Lyall ST10527831
+References
+- Inspriation: https://lifestyle.co.za/?srsltid=AfmBOooDEwHAZx6Sxh3kyTRpnQKxPgGKoxcfeOCRTpvV8va8c27Sfs_2
+- Buguet: https://www.growthpulsemedia.co.za/website-cost-south-africa/
+- Logo: https://www.canva.com/design/DAHRg61_xCs/NPJQEmo1TPmjTWxRkcUhEw/edit?ui=e30
+- CSS: https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf
+- HTML: https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
+- Java script: https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf
+- Github: https://github.com/ariana-code07/Gloriosa-Gardens.git
+
 
 Project Overview: 
 
@@ -41,8 +50,10 @@ Part 1 Details ( HTML)
 - Added basic HTML tags (Header,body,main,ect)
 - Created four webpages: Home, About us, Gallery and Contact us
 - Added basic information
-- Added basic style formatting
-  
+- Added basic style formattingg
+- Sitmap
+<img width="997" height="430" alt="image" src="https://github.com/user-attachments/assets/6c24284c-8a8c-472d-a076-f999ab7635ee" />
+
 Part 2 Details (CSS)
 - Added Enquiry webpage
 - Defined a design system using CSS custom properties for colour, typography and spacing: deep forest green and warm parchment as the base palette, with an ember-red-to-gold “flame lily” gradient as a signature accent.
@@ -60,18 +71,44 @@ Changelog
 - Added a responsive/mobile viewport meta tag and responsive grid breakpoints — the original site was not mobile-friendly.
 - Created a new Enquiry.html page with a quote-request form: full name, phone, email, suburb/area, a service dropdown, preferred date, and a message field.
 
-Sitmap
 
-<img width="855" height="402" alt="image" src="https://github.com/user-attachments/assets/132f443a-a10e-40c3-ad56-f0ce1dd9febc" />
+  Part 3 Details (Java Script)
+- Renamed pages to clean URLs: Home.html → index.html, About us.html → about.html, Contact us.html → contact.html (and services, gallery, enquiry in lowercase); every link updated and a _redirects file added for the old names.
+- Renamed folders to lowercase (css/, js/, images/) and images to descriptive names (e.g. bushes.jpg → trimmed-garden-bushes.jpg); compressed large images.
+JavaScript interactivity (js/main.js, jQuery)
+-S ervices page now builds its cards in JavaScript with live search, a category filter and A–Z / Z–A / category sorting; the original static list is kept inside <noscript>.
+- Added a FAQ accordion on Services and a click-to-enlarge lightbox on Gallery (keyboard and previous/next support).
+-	Added scroll-reveal animations, animated stat counters and hover effects, all disabled for visitors who prefer reduced motion.
+Forms
+-	Enquiry: Rebuilt the form with garden size, frequency and date fields; after validation it loads data/pricing.json by AJAX and shows an estimated cost range and availability on the page without reloading, with an option to email the enquiry.
+-	Contact: Added a validated message form (name, email, optional phone, message type, message) that compiles an email addressed to the business recipient.
+-	Rules: Validation covers name, email, South African phone format, dates (not in the past), required selects and message length (10–500 characters, live counter), with inline error messages.
+Performance, security and accessibility
+-	Lazy-loaded images with set dimensions, deferred scripts, video preload off with a poster image.
+-	Added security headers and a content security policy (_headers), a skip link, visible focus styles and ARIA attributes.
+- Replaced the footer with a fuller one (navigation, phone, email, hours).
+
+Changelog
+
+Date/time updater (js/datetime.js)
+- Added a top bar on every page showing today’s date and a live clock that updates every second in South African time.
+-	Added an Open now / Closed status calculated from the opening hours (Mon–Fri 07:00–17:00, Sat 08:00–13:00; public holidays not included).
+-	Today’s row is highlighted in the hours table, and the footer copyright year now updates automatically.
+
+Form validator (js/validator.js)
+-	Moved all validation out of main.js into a reusable module shared by the enquiry and contact forms.
+-	Added an error summary at the top of each form with links that jump to each problem field, and automatic formatting of valid phone numbers (e.g. 084 723 9418).
+
+Gallery slideshow (js/slideshow.js)
+-	Added a “Garden Slideshow” section to the Gallery with five photos, fade transitions and autoplay every 5 seconds.
+-	Controls: previous/next buttons, clickable dots, slide counter, Pause/Play button, arrow keys and touch swipe; it pauses on hover/focus and does not autoplay for reduced-motion visitors.
+-	Kept the click-to-enlarge photo grid below the slideshow.
+Added
+-	README.md now covers Part 3 details, the new scripts, SEO, deployment steps, sitemap, a versioned changelog (3.0–3.12) and references.
+-	The Part 2 feedback section in the changelog is left as a template for you to complete.
 
 
-References
-- Inspriation: https://lifestyle.co.za/?srsltid=AfmBOooDEwHAZx6Sxh3kyTRpnQKxPgGKoxcfeOCRTpvV8va8c27Sfs_2
-- Buguet: https://www.growthpulsemedia.co.za/website-cost-south-africa/
-- Logo: https://www.canva.com/design/DAHRg61_xCs/NPJQEmo1TPmjTWxRkcUhEw/edit?ui=e30
-- Github: https://github.com/ariana-code07/Gloriosa-Gardens.git
-- HTML: https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
-- CSS: https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf
+  
 
 
 
